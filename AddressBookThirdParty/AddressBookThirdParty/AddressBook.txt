@@ -1,0 +1,27 @@
+ __________________
+Persons detail_____________________ 
+FirstName: Nilima
+LastName: Wadal
+City    : akot
+Email   : maha
+State   : niima@gmai.com
+PhoneNum: 98989898989
+Zip   : 444101
+ __________________
+Persons detail_____________________ 
+FirstName: Snehal
+LastName: Gunde
+City    : Hgt
+Email   : Andra
+State   : snheal@gmail.com
+PhoneNum: 9876543201
+Zip   : 411089
+ __________________
+Persons detail_____________________ 
+FirstName: Aishu
+LastName: yede
+City    : Hgt
+Email   : Maharashtra
+State   : ASihu@gmail.com
+PhoneNum: 98763637444
+Zip   : 3333221
