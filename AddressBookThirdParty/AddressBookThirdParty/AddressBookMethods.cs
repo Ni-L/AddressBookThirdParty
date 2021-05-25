@@ -162,6 +162,15 @@ namespace AddressBookThirdParty
         {
             FileReadWriteCsv.WriteCsvFile(listofcontacts);
         }
+        public void WriteContactsInJSONFile()
+        {
+            FileReadWriteJSon.WriteContactsInJSONFile(listofcontacts);
+        }
+
+        public void ReadContactsFronJSON()
+        {
+            FileReadWriteJSon.ReadContactsFromJSONFile();
+        }
         public void editPerson()//Adding EditPerson Method
         {
             Console.WriteLine("\n Enter First name to edit details:");

@@ -10,7 +10,7 @@ namespace AddressBookThirdParty
     class FileReadWriteCsv
 
     {
-        static string FilePathCsv = @"C:\Users\Aishwarya\source\repos\AddressBookThirdParty\AddressBookThirdParty\AddressBookThirdParty\Csvdatatoreadandwrite.csv";
+       public static string FilePathCsv = @"C:\Users\Aishwarya\source\repos\AddressBookThirdParty\AddressBookThirdParty\AddressBookThirdParty\Csvdatatoreadandwrite.csv";
         public static void WriteCsvFile(List<Person> contacts)
         {
             if (File.Exists(FilePathCsv))

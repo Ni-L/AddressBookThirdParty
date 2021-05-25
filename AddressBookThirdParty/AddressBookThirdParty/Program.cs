@@ -56,7 +56,7 @@ namespace AddressBookThirdParty
                     " \n9.Display Contacts in Sorted " +
                      "\n10.Display contact in sorted by state or by city " +
                       "\n11.File Operation " +
-                      "\n12.Read Write Operation inCsv \n13.Exit");
+                      "\n12.Read Write Operation inCsv \n13.Read Write Operation in Json file \n14.Exit");
                 Console.WriteLine("_______________________________________________________________________");
                 //Inside While declare one variable of name choice
                 //Create as a Readline for user input
@@ -251,14 +251,14 @@ namespace AddressBookThirdParty
                         {
                             case 1:
                                 Console.WriteLine("Enter Address Book name where you want to write person details");
-                                string write1 = Console.ReadLine();
-                                if (mydictionarycontact.ContainsKey(write1))
+                                string writecsv = Console.ReadLine();
+                                if (mydictionarycontact.ContainsKey(writecsv))
                                 {
-                                    mydictionarycontact[write1].WriteCsvFile();
+                                    mydictionarycontact[writecsv].WriteCsvFile();
                                 }
                                 else
                                 {
-                                    Console.WriteLine("No Address book exist with name {0} ", write1);
+                                    Console.WriteLine("No Address book exist with name {0} ", writecsv);
                                 }
                                 break;
                             case 2:
@@ -280,6 +280,42 @@ namespace AddressBookThirdParty
                         }
                         break;
                     case 13:
+                        Console.WriteLine("chioce : \n1.Write Person detail in Json file \n2 Read Person detail from Json file");
+                        int chooseOption3 = Convert.ToInt32(Console.ReadLine());
+                        switch (chooseOption3)
+                        {
+                            case 1:
+                                Console.WriteLine("Enter Address Book name where you want to write person details");
+                                string writejson = Console.ReadLine();
+                                if (mydictionarycontact.ContainsKey(writejson))
+                                {
+                                    mydictionarycontact[writejson].WriteContactsInJSONFile();
+                                }
+                                else
+                                {
+                                    Console.WriteLine("No Address book exist with name {0} ", writejson);
+                                }
+                                break;
+                            case 2:
+                                Console.WriteLine("Enter Address Book name where you want to write person details");
+                                string read = Console.ReadLine();
+                                if (mydictionarycontact.ContainsKey(read))
+                                {
+                                    mydictionarycontact[read].ReadContactsFronJSON();
+                                }
+                                else
+                                {
+                                    Console.WriteLine("No Address book exist with name {0} ", read);
+                                }
+                                break;
+
+                            default:
+                                Console.WriteLine("Please enter valid option");
+                                break;
+                        }
+                        break;
+
+                    case 14:
                         Result = false;
                         break;
                     default:
